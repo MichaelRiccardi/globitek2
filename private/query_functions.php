@@ -62,10 +62,11 @@
 
     //$created_at = date("Y-m-d H:i:s");
     $sql = "INSERT INTO states ";
-    $sql .= "(name, code) ";
+    $sql .= "(name, code, country_id) ";
     $sql .= "VALUES (";
     $sql .= "'" . $state['name'] . "',";
-    $sql .= "'" . $state['code'] . "'";
+    $sql .= "'" . $state['code'] . "',";
+    $sql .= "'" . $state['country_id'] . "'";
     //$sql .= "'" . $created_at . "',";
     $sql .= ");";
       
@@ -94,7 +95,8 @@
 
     $sql = "UPDATE states SET ";
     $sql .= "name='" . $state['name'] . "', ";
-    $sql .= "code='" . $state['code'] . "' ";
+    $sql .= "code='" . $state['code'] . "', ";
+    $sql .= "country_id='" . $state['country_id'] . "' ";
     $sql .= "WHERE id='" . $state['id'] . "' ";
     $sql .= "LIMIT 1;";
       
