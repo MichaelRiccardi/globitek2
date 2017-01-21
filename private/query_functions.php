@@ -60,7 +60,15 @@
       return $errors;
     }
 
-    $sql = ""; // TODO add SQL
+    //$created_at = date("Y-m-d H:i:s");
+    $sql = "INSERT INTO states ";
+    $sql .= "(name, code) ";
+    $sql .= "VALUES (";
+    $sql .= "'" . $state['name'] . "',";
+    $sql .= "'" . $state['code'] . "'";
+    //$sql .= "'" . $created_at . "',";
+    $sql .= ");";
+      
     // For INSERT statments, $result is just true/false
     $result = db_query($db, $sql);
     if($result) {
@@ -84,7 +92,14 @@
       return $errors;
     }
 
-    $sql = ""; // TODO add SQL
+    $sql = "UPDATE states SET ";
+    $sql .= "name='" . $state['name'] . "', ";
+    $sql .= "code='" . $state['code'] . "' ";
+    $sql .= "WHERE id='" . $state['id'] . "' ";
+    $sql .= "LIMIT 1;";
+      
+    //echo $sql;
+      
     // For update_state statments, $result is just true/false
     $result = db_query($db, $sql);
     if($result) {

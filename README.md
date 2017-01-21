@@ -18,11 +18,11 @@ The following **required** functionality is completed:
   * [X]  Required: new.php
   * [X]  Required: edit.php
 
-5\. [ ]  Required: Complete Staff CMS for States
-  * [ ]  Required: index.php
-  * [ ]  Required: show.php
-  * [ ]  Required: new.php
-  * [ ]  Required: edit.php
+5\. [X]  Required: Complete Staff CMS for States
+  * [X]  Required: index.php
+  * [X]  Required: show.php
+  * [X]  Required: new.php
+  * [X]  Required: edit.php
 
 6\. [ ]  Required: Complete Staff CMS for Territories
   * [ ]  Required: index.php
