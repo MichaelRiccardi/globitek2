@@ -2,20 +2,19 @@
 
 <?php
 if(!isset($_GET['id'])) {
-  redirect_to('index.php');
+    redirect_to('index.php');
 }
 $id = $_GET['id'];
 $territory_result = find_territory_by_id($id);
 // No loop, only one result
 $territory = db_fetch_assoc($territory_result);
-$state_id = $territory['state_id'];
 ?>
 
 <?php $page_title = 'Staff: Territory of ' . $territory['name']; ?>
 <?php include(SHARED_PATH . '/header.php'); ?>
 
 <div id="main-content">
-  <a href="#add_a_url">Back to State Details</a>
+  <a href="../states/show.php?id=<?php echo $territory['state_id'] ?>">Back to State Details</a>
   <br />
 
   <h1>Territory: <?php echo $territory['name']; ?></h1>
@@ -39,7 +38,7 @@ $state_id = $territory['state_id'];
     db_free_result($territory_result);
   ?>
   <br />
-  <a href="#add_a_url">Edit</a><br />
+  <a href="edit.php?id=<?php echo $territory['id'] ?>">Edit</a><br />
 
 </div>
 
