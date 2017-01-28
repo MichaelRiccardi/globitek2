@@ -37,6 +37,8 @@ if(is_post_request()) {
   <a href="../states/show.php?id=<?php echo raw_u($_GET['state_id']); ?>">Back to State Details</a><br />
 
   <h1>New Territory</h1>
+    
+    <?php echo display_errors($errors); ?>
 
   <form action="new.php?state_id=<?php echo raw_u($_GET['state_id']); ?>" method="post">
     Name:<br />

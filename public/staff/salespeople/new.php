@@ -32,7 +32,7 @@ if(is_post_request()) {
 <?php include(SHARED_PATH . '/header.php'); ?>
 
 <div id="main-content">
-  <a href="#add_a_url">Back to Salespeople List</a><br />
+  <a href="index.php">Back to Salespeople List</a><br />
 
   <h1>New Salesperson</h1>
 

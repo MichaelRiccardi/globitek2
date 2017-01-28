@@ -389,7 +389,7 @@
     $sql .= "'" . db_escape($db, $user['last_name']) . "',";
     $sql .= "'" . db_escape($db, $user['email']) . "',";
     $sql .= "'" . db_escape($db, $user['username']) . "',";
-    $sql .= "'" . $created_at . "',";
+    $sql .= "'" . $created_at . "'";
     $sql .= ");";
     // For INSERT statments, $result is just true/false
     $result = db_query($db, $sql);
