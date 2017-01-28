@@ -34,15 +34,15 @@ if(is_post_request()) {
 <?php include(SHARED_PATH . '/header.php'); ?>
 
 <div id="main-content">
-  <a href="../states/show.php?id=<?php echo $_GET['state_id']; ?>">Back to State Details</a><br />
+  <a href="../states/show.php?id=<?php echo raw_u($_GET['state_id']); ?>">Back to State Details</a><br />
 
   <h1>New Territory</h1>
 
-  <form action="new.php?state_id=<?php echo $_GET['state_id']; ?>" method="post">
+  <form action="new.php?state_id=<?php echo raw_u($_GET['state_id']); ?>" method="post">
     Name:<br />
-    <input type="text" name="name" value="<?php echo $territory['name']; ?>" /><br />
+    <input type="text" name="name" value="<?php echo h($territory['name']); ?>" /><br />
     Position:<br />
-    <input type="text" name="position" value="<?php echo $territory['position']; ?>" /><br />
+    <input type="text" name="position" value="<?php echo h($territory['position']); ?>" /><br />
     <br />
     <input type="submit" name="submit" value="Submit"  />
   </form>

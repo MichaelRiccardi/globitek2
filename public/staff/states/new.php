@@ -39,11 +39,11 @@ if(is_post_request()) {
 
   <form action="new.php" method="post">
     Name:<br />
-    <input type="text" name="name" value="<?php echo $state['name']; ?>" /><br />
+    <input type="text" name="name" value="<?php echo h($state['name']); ?>" /><br />
     Code:<br />
-    <input type="text" name="code" value="<?php echo $state['code']; ?>" /><br />
+    <input type="text" name="code" value="<?php echo h($state['code']); ?>" /><br />
     Country ID:<br />
-    <input type="text" name="country_id" value="<?php echo $state['country_id']; ?>" /><br />
+    <input type="text" name="country_id" value="<?php echo h($state['country_id']); ?>" /><br />
     <br />
     <input type="submit" name="submit" value="Create"  />
   </form>
