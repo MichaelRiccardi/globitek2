@@ -67,9 +67,9 @@ The following advanced user stories are optional:
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories:
+<a href="http://michaelriccardi.com/globitek2.gif" target="_blank">Click here</a> for a walkthrough of implemented user stories. (GitHub fails to show this GIF inline.)
 
-<img src='http://michaelriccardi.com/globitek2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough'>
+<!--img src='http://michaelriccardi.com/globitek2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough'-->
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
